@@ -1,0 +1,47 @@
+body{
+    background-color: #fafafa;
+}
+h2{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.crd{
+    border: 1px solid #eee;
+    background-color: white;
+    text-align: center;
+    margin: 15% 0 2% 1%;
+    padding: 7%;
+}
+
+.crd:hover{
+    border-top: 2px solid #50BC01;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+#money{
+    margin-top: 18%;
+    color: #5CAEFE;
+}
+
+#m2{
+    margin-top: 7%;
+    color: #5CAEFE;
+}
+
+.btn{
+    background-color: #5CAEFE;
+    color: white;
+}
+
+.small{
+    color: #50BC01;
+    margin: 0;
+}
+
+@media (max-width:767px){
+    .crd{
+        width: 75%;
+        margin: 15% 0 2% 12%;
+    }
+}

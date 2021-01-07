@@ -1,0 +1,38 @@
+.sec{
+    background-color: #222;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 70vh;
+    width: 70vw;
+    max-width: 800px;
+}
+.Details{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    position: relative;
+    width: calc(50% - 10px);
+}
+h3{
+    color: white;
+}
+.info{
+    color: white;
+    border-bottom: 1px solid #333
+}
+.schedules{
+    color: #8e44ad;
+}
+.image{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    position: relative;
+    width: calc(50% - 10px);
+}
+
+img{
+    height: 100%;
+}
