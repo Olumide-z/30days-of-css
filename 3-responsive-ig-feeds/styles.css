@@ -1,31 +1,30 @@
-body{
-    text-align: center;
+body {
+  text-align: center;
 }
 
-img{
-    width: 30%;
-    height: 30%;
-    padding: 1%;
+img {
+  width: 30%;
+  height: 30%;
+  padding: 1%;
 }
 
 @media screen and (max-width: 830px) {
-    
-    img{
-        width: 40%;
-        height: 40%;
-    }
+  img {
+    width: 40%;
+    height: 40%;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    img{
-        width: 30%;
-        height: 30%;
-    }
+  img {
+    width: 30%;
+    height: 30%;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    img{
-        width: 40%;
-        height: 40%;
-    }
+  img {
+    width: 40%;
+    height: 40%;
+  }
 }

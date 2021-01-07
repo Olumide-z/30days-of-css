@@ -1,76 +1,75 @@
-body{
-    background-color: #e9bc32;
-    display: flex;
-    justify-content: center;
+body {
+  background-color: #e9bc32;
+  display: flex;
+  justify-content: center;
 }
 
-.box{
-    background-color: white;
-    text-align: center;
-    margin-top: 15%;
-    padding: 3%;
-    width: 40%;
-    border-radius: 20px;
+.box {
+  background-color: white;
+  text-align: center;
+  margin-top: 15%;
+  padding: 3%;
+  width: 40%;
+  border-radius: 20px;
 }
 
-p{
-    font-family: 'Redressed', cursive;
-    font-size: 1.2rem;
+p {
+  font-family: "Redressed", cursive;
+  font-size: 1.2rem;
 }
 
-h3{
-    font-size: 1.6rem;
-    font-family: 'Libre Baskerville', serif;
+h3 {
+  font-size: 1.6rem;
+  font-family: "Libre Baskerville", serif;
 }
 
+.myForm {
+  width: 100%;
+  border-radius: 50px;
+  padding: 4%;
+  margin-top: 2%;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Redressed", cursive;
+  font-size: 1.2rem;
+}
 
-.myForm{
+.myBtn {
+  border-radius: 20px;
+  margin-top: 2%;
+  font-family: "Redressed", cursive;
+  background-color: #312940;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.myBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.register {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1084px) {
+  .box {
+    width: 80%;
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 845px) {
+  .box {
+    width: 80%;
+    padding: 5%;
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 738px) {
+  .box {
     width: 100%;
-    border-radius: 50px;  
-    padding: 4%; 
-    margin-top: 2%;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); 
-    font-family: 'Redressed', cursive;
-    font-size: 1.2rem;
-}
-
-.myBtn{
-    border-radius: 20px;
-    margin-top: 2%;
-    font-family: 'Redressed', cursive;
-    background-color: #312940;
-    color: white;
-    font-size: 1.2rem;
-}
-
-.myBtn:hover{
-    background-color: white;
-    color: black;
-}
-
-.register{
-    display: flex;
-    justify-content: space-evenly;  
-}
-
-@media (max-width: 1084px){
-    .box{
-        width: 80%;
-        margin-top: 30%;
-    }    
-}
-
-@media (max-width: 845px){
-    .box{
-        width: 80%;
-        padding: 5%;
-        margin-top: 30%;
-    }
-}
-
-@media (max-width: 738px){
-    .box{
-        width: 100%;
-        margin-top: 30%;
-    }
+    margin-top: 30%;
+  }
 }
