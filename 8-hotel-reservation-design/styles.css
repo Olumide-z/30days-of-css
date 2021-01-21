@@ -1,3 +1,31 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::after {
+  background-image: url("https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWwlMjByb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  content: '';
+  filter: blur(5px);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
 .sec {
   background-color: #222;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -10,10 +38,33 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 50px;
   position: relative;
   width: calc(50% - 10px);
 }
+
+.Details::after {
+  border-top: 0 solid transparent;
+  border-bottom: 70vh solid transparent;
+  border-left: 30px solid #222;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 0%;
+  width: 0;
+}
+
+.Details button {
+  background-color: transparent;
+  border: 1px solid #8e44ad;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 15px 30px;
+  margin-top: auto;
+}
+
 h3 {
   color: white;
 }
@@ -25,14 +76,55 @@ h3 {
   color: #8e44ad;
 }
 .image {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  position: relative;
-  width: calc(50% - 10px);
+  background-image: url("https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWwlMjByb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  );
+  width: calc(50% + 30px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (max-width: 910px) {
+  .Details button {
+    padding: 5px 10px;
+  }
 }
 
-img {
-  height: 100%;
+@media screen and (max-width: 863px) {
+  .Details{
+    font-size: 0.9rem;
+  }  
+}
+
+@media screen and (max-width: 803px){
+  .Details button{
+    padding: 3px 5px;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 803px){
+  .image{
+    width: 0;
+  }
+  .Details{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .Details button {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+  .Details::after{
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 449px){
+  .Details{
+    font-size: 0.8rem;
+  }
+  .Details button {
+    padding: 10px 20px;
+    font-size: 0.7rem;
+  }
 }
