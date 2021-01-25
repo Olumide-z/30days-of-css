@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+section .imageBx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, #e91e63, #03a9f4);
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+
+section .imageBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+section .imageBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+section .content .formBx {
+  position: relative;
+  width: 50%;
+}
+
+section .content .formBx h2 {
+  text-transform: uppercase;
+  color: #607d8b;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  border-bottom: 4px solid #ff4584;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+section .content .formBx form .inputBx {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+section .content .formBx form .inputBx input {
+  border-radius: 30px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: 1px solid #607d8b;
+  letter-spacing: 1px;
+  color: #607d8b;
+  background: transparent;
+}
+
+section .content .formBx form .inputBx span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #607d8b;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+section .content .formBx form .inputBx input[type="submit"] {
+  background-color: #ff4584;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+section .content .formBx form .inputBx input[type="submit"]:hover {
+  background: #f53677;
+}
+
+section .content .formBx .remember {
+  margin-bottom: 10px;
+  color: #607d8b;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+section .content .formBx form .inputBx p {
+  color: #607d8b;
+}
+
+section .content .formBx form .inputBx p a {
+  text-decoration: none;
+  color: #ff4584;
+}
+
+.sci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sci li {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7px;
+  background: #607d8b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sci li:hover {
+  background-color: #ff4584;
+}
+
+.sci img {
+  transform: scale(0.8);
+  filter: invert(1);
+}
+
+h3 {
+  text-align: center;
+  color: #607d8b;
+  margin: 80px 0 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  section .imageBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  section .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  section .content .formBx {
+    width: 100%;
+    padding: 40px;
+    background-color: rgb(225 225 225 / 0.9);
+    margin: 50px;
+  }
+
+  section .content .formBx h3 {
+    color: #607d8b;
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 500;
+  }
+}
