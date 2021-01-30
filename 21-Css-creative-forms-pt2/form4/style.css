@@ -159,4 +159,56 @@
         color: #fff;
         margin-bottom: 12px;
     }
+
+    .container .title {
+        position: relative;
+        text-align: center;
+        margin: 20px 30px;
+    }
+    .container .formBx form .btn input[type="submit"] {
+        width: 40%;
+    }
+}
+
+@media (max-width: 507px){
+    .container .title h2 {
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    .container {
+        padding: 10px 15px;
+    }
+
+    .container .formBx form .btn input[type="submit"] {
+        width: 40%;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+    .container .contact-info .text p {
+        font-weight: 200;
+        letter-spacing: 1px;
+        font-size: 0.7rem;
+    }
+
+    .container .contact-info .icon {
+        width: 60px;
+        height: 60px;
+        background: #fff;
+        border-radius: 50%;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 20px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .container .title {
+        position: relative;
+        text-align: center;
+        margin: 20px 10px;
+    }
 }

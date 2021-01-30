@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  font-family: "Potta One", cursive;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav ul li a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./imag/wave.png);
+  -webkit-background-clip: text;
+  background-repeat: repeat-x;
+  animation: animate 2s linear infinite;
+  transition: 0.5s;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+ul li a:hover::before {
+  width: 100%;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}

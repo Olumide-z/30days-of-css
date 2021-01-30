@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+
+|* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background-color: #222;
+}
+
+.container .clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.container .clip.clip1 {
+  background: url("https://images.unsplash.com/photo-1467703834117-04386e3dadd8?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+  background-size: cover;
+  clip-path: polygon(0 0, 54% 0, 18% 100%, 0% 100%);
+}
+
+.container .clip.clip2 {
+  background: url("https://images.unsplash.com/photo-1611692997119-3515a2e7d3cb?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8YkRvNDhjVWh3bll8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+  background-size: cover;
+  clip-path: polygon(49% 0, 100% 0, 45% 100%, 18% 100%);
+}
+
+.container .clip.clip3 {
+  background: url("https://images.unsplash.com/photo-1611600382820-b7d6214847c5?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfHhIeFlUTUhMZ09jfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+
+.container:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover {
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.container .clip .content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 70%;
+  padding: 10px;
+  transition: 0.5s;
+  background: #fff;
+  opacity: 0;
+}
+
+.container .clip:hover .content {
+  bottom: 0;
+  opacity: 1;
+}
